@@ -1,7 +1,4 @@
-package card;
 
-import java.util.Random;
-import java.util.Scanner;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
@@ -75,8 +72,10 @@ public class CardTrick {
             System.out.println(c.getValue() + " of " + c.getSuit());
         }
 
-        
-
-        scanner.close();
     }
 }
+
+
+
+
+
