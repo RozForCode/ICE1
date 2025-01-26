@@ -28,32 +28,29 @@ public class CardTrick {
       
 
         // Ask the user for a card
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Pick a card:");
-        System.out.print("Enter a value (1-13): ");
-        int userValue = scanner.nextInt();
-        System.out.print("Enter a suit (Hearts, Diamonds, Spades, Clubs): ");
-        scanner.nextLine(); // Consume the newline
-        String userSuit = scanner.nextLine();
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Pick a card:");
+        // System.out.print("Enter a value (1-13): ");
+        // int userValue = scanner.nextInt();
+        // System.out.print("Enter a suit (Hearts, Diamonds, Spades, Clubs): ");
+        // scanner.nextLine(); // Consume the newline
+        // String userSuit = scanner.nextLine();
 
-        // Check if the user's card is in the magic hand
-        boolean userCardFound = false;
-        for (Card c : magicHand) {
-            if (c.getValue() == userValue && c.getSuit().equalsIgnoreCase(userSuit)) {
-                userCardFound = true;
-                break;
-            }
-        }
+        // // Check if the user's card is in the magic hand
+        // boolean userCardFound = false;
+        // for (Card c : magicHand) {
+        //     if (c.getValue() == userValue && c.getSuit().equalsIgnoreCase(userSuit)) {
+        //         userCardFound = true;
+        //         break;
+        //     }
+        // }
 
-        if (userCardFound) {
-            System.out.println("Congratulations! Your card is in the magic hand!");
-        } else {
-            System.out.println("Sorry, your card is not in the magic hand.");
-        }
-        System.out.println("Magic Hand:");
-        for (Card c : magicHand) {
-            System.out.println(c.getValue() + " of " + c.getSuit());
-        }
+        // if (userCardFound) {
+        //     System.out.println("Congratulations! Your card is in the magic hand!");
+        // } else {
+        //     System.out.println("Sorry, your card is not in the magic hand.");
+        // }
+        
         // Hard-coded lucky card
         Card luckyCard = new Card();
         luckyCard.setValue(2);
@@ -69,9 +66,13 @@ public class CardTrick {
         }
 
         if (luckyCardFound) {
-            System.out.println("Lucky card (2 of Clubs) is in the magic hand! You win!");
+            System.out.println("Lucky card --(2 of Clubs)-- is in the magic hand! You win!");
         } else {
-            System.out.println("Lucky card (2 of Clubs) is not in the magic hand. Better luck next time!");
+            System.out.println("Lucky card --(2 of Clubs)-- is not in the magic hand. Better luck next time!");
+        }
+        System.out.println("Magic Hand was:");
+        for (Card c : magicHand) {
+            System.out.println(c.getValue() + " of " + c.getSuit());
         }
 
         
