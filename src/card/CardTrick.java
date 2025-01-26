@@ -1,11 +1,16 @@
-
-
 /**
- * A class that fills a magic hand of 7 cards with random Card Objects
- * and then asks the user to pick a card and searches the array of cards
- * for the match to the user's card. To be used as starting code in ICE 1.
+ * A class that models playing card Objects. Cards have 
+ * a value (note that Ace = 1, Jack -11, Queen =12, King = 13)
+ * A suit (clubs, hearts, spades, diamonds).
+ * There are 52 cards in a deck, no jokers.
+ * This code is to be used in ICE1. When you create your own branch,
+ * add your name as a modifier.
+ * 
+ * Modified by: Navrose Johal
+ * Student ID: 991745899
+ * Date: January 26, 2025
+ * 
  * @author srinivsi
- * @modifier [Your Name], [Your Student Number], [Date Modified]
  */
 public class CardTrick {
 
